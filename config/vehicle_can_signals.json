@@ -1,0 +1,58 @@
+{
+  "system": "Automotive_HMI_CAN_Matrix",
+  "version": "2.4.0",
+  "messages": [
+    {
+      "id": "0x120",
+      "name": "Ambient_Environment_Data",
+      "cycle_time_ms": 100,
+      "sender_ecu": "Front_Body_Controller",
+      "signals": {
+        "Outside_Temp_Raw": { "unit": "deg_C", "min": -40.0, "max": 85.0, "resolution": 0.1, "default": 20.0 },
+        "Ice_Warning_Request": { "type": "boolean", "default": false },
+        "Rain_Sensor_Active": { "type": "boolean", "default": false }
+      }
+    },
+    {
+      "id": "0x140",
+      "name": "Powertrain_Dynamics",
+      "cycle_time_ms": 20,
+      "sender_ecu": "Engine_Control_Module",
+      "signals": {
+        "Vehicle_Speed_Kmh": { "unit": "km/h", "min": 0.0, "max": 320.0, "resolution": 0.1, "default": 0.0 },
+        "Engine_Speed_RPM": { "unit": "rpm", "min": 0, "max": 8500, "resolution": 1, "default": 800 },
+        "Gear_Position": { "enum": ["P", "R", "N", "D1", "D2", "D3", "D4", "D5", "D6", "D7"], "default": "P" },
+        "Ignition_Terminal_State": { "enum": ["KL30_OFF", "KL15_ON", "CRANKING"], "default": "KL15_ON" }
+      }
+    },
+    {
+      "id": "0x160",
+      "name": "Tire_Pressure_Monitoring_System",
+      "cycle_time_ms": 500,
+      "sender_ecu": "TPMS_Gateway",
+      "signals": {
+        "FL_Pressure_kPa": { "unit": "kPa", "min": 0, "max": 500, "nominal": 230, "default": 230 },
+        "FR_Pressure_kPa": { "unit": "kPa", "min": 0, "max": 500, "nominal": 230, "default": 230 },
+        "RL_Pressure_kPa": { "unit": "kPa", "min": 0, "max": 500, "nominal": 230, "default": 230 },
+        "RR_Pressure_kPa": { "unit": "kPa", "min": 0, "max": 500, "nominal": 230, "default": 230 },
+        "FL_Temp_C": { "unit": "deg_C", "default": 25.0 },
+        "FR_Temp_C": { "unit": "deg_C", "default": 25.0 },
+        "RL_Temp_C": { "unit": "deg_C", "default": 25.0 },
+        "RR_Temp_C": { "unit": "deg_C", "default": 25.0 }
+      }
+    },
+    {
+      "id": "0x180",
+      "name": "Safety_Telltale_Broadcast",
+      "cycle_time_ms": 50,
+      "sender_ecu": "Restraints_Control_Module",
+      "signals": {
+        "Seatbelt_Warning_Lamp": { "enum": ["OFF", "SOLID_RED", "FLASHING_RED"], "default": "OFF" },
+        "Airbag_Warning_Lamp": { "enum": ["OFF", "SOLID_RED"], "default": "OFF" },
+        "Brake_System_Lamp": { "enum": ["OFF", "SOLID_RED", "SOLID_AMBER"], "default": "OFF" },
+        "ESC_OFF_Lamp": { "enum": ["OFF", "SOLID_AMBER"], "default": "OFF" },
+        "Check_Engine_Lamp": { "enum": ["OFF", "SOLID_AMBER", "FLASHING_AMBER"], "default": "OFF" }
+      }
+    }
+  ]
+}

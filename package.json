@@ -1,0 +1,25 @@
+{
+  "name": "automotive-hmi-test-framework",
+  "version": "2.4.0",
+  "description": "Automotive HMI & IVI Automated Testing & Signal Simulation Framework (Robot Framework, Python, CAN Trace Analysis & Automated Jira Defect Reporting)",
+  "main": "run_tests.js",
+  "scripts": {
+    "test": "node run_tests.js",
+    "report": "start test_execution_report.html"
+  },
+  "keywords": [
+    "automotive",
+    "hmi",
+    "ivi",
+    "cluster",
+    "robot-framework",
+    "python",
+    "can-bus",
+    "test-automation",
+    "istqb",
+    "bva",
+    "jira"
+  ],
+  "author": "Sudeepthi Rao",
+  "license": "MIT"
+}

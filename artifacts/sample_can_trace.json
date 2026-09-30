@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": 1727708000.100,
+    "can_id": "0x140",
+    "signals": { "Vehicle_Speed_Kmh": 100.0, "Engine_Speed_RPM": 2400, "Gear_Position": "D4" },
+    "status": "TRANSMITTED_OK"
+  },
+  {
+    "timestamp": 1727708000.200,
+    "can_id": "0x120",
+    "signals": { "Outside_Temp_Raw": 13.0, "Ice_Warning_Request": true },
+    "status": "ANOMALY_DETECTED_ICE_WARNING_AT_WARM_TEMP"
+  },
+  {
+    "timestamp": 1727708000.300,
+    "can_id": "0x160",
+    "signals": { "FL_Pressure_kPa": 230, "FR_Pressure_kPa": 44400, "RL_Pressure_kPa": 230, "RR_Pressure_kPa": 230 },
+    "status": "ANOMALY_DETECTED_EXTREME_FR_PRESSURE"
+  }
+]

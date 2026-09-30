@@ -1,0 +1,21 @@
+{
+  "environments": {
+    "HIL_Bench_01": {
+      "type": "Hardware_in_the_Loop",
+      "target_hardware": "Audi_Virtual_Cockpit_Gen2",
+      "firmware_version": "v2.4.0-RC3",
+      "bus_transceiver": "Vector_VN1630A",
+      "can_channel": 1,
+      "baud_rate": 500000,
+      "power_supply_voltage": 13.8,
+      "location": "Automotive_Test_Lab_Rack_04"
+    },
+    "Virtual_SIL_Simulator": {
+      "type": "Software_in_the_Loop",
+      "target_software": "Qt_QML_Cluster_Renderer",
+      "runtime": "Linux_Container_Docker",
+      "virtual_can_interface": "vcan0",
+      "dlt_daemon_port": 3490
+    }
+  }
+}

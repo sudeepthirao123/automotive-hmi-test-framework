@@ -1,0 +1,7 @@
+[2026-09-30 19:40:00.102] [CLUSTER_ECU] [SYS:INIT] [INFO] HMI Qt/QML Cluster Renderer boot sequence initialized
+[2026-09-30 19:40:00.250] [CLUSTER_ECU] [CAN:BUS1] [INFO] CAN channel 1 transceiver online, baud=500kbps
+[2026-09-30 19:40:01.012] [CLUSTER_ECU] [HMI:KL15] [INFO] Ignition terminal KL15 active, starting 2000ms bulb check
+[2026-09-30 19:40:03.015] [CLUSTER_ECU] [HMI:KL15] [INFO] Bulb check completed, safety telltales extinguished
+[2026-09-30 19:40:05.420] [CLUSTER_ECU] [TPMS:DISP] [ERROR] Inconsistent unit detected: wheel FR unit resolved to 'bar' while system mode is 'kPa'
+[2026-09-30 19:40:05.422] [CLUSTER_ECU] [TPMS:DISP] [WARN] Pressure value 444 exceeds normal threshold (nominal: 230)
+[2026-09-30 19:40:06.100] [CLUSTER_ECU] [TEMP:WARN] [ERROR] Ice hazard snowflake telltale triggered at ambient temp +13.0°C (threshold: <= 4.0°C)
