@@ -1,9 +1,14 @@
 # 🚗 Automotive HMI & IVI Automated Testing & Signal Simulation Framework
 
+[![Live Demo - GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-brightgreen?logo=github&style=for-the-badge)](https://sudeepthirao694-hub.github.io/automotive-hmi-test-framework/)
+
 [![HMI CI Pipeline](https://github.com/sudeepthirao694-hub/automotive-hmi-test-framework/actions/workflows/hmi-ci-pipeline.yml/badge.svg)](https://github.com/sudeepthirao694-hub/automotive-hmi-test-framework/actions/workflows/hmi-ci-pipeline.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Domain: Automotive](https://img.shields.io/badge/Domain-Automotive_HMI_%2F_IVI-blue.svg)](#)
 [![Standards: ISO 2575 | ASPICE | UNECE R39](https://img.shields.io/badge/Standards-ISO_2575_%7C_ASPICE-green.svg)](#)
+
+> 🌐 **Interactive Web Portal:** [https://sudeepthirao694-hub.github.io/automotive-hmi-test-framework/](https://sudeepthirao694-hub.github.io/automotive-hmi-test-framework/)  
+> Includes the **Visual Defect Spotter**, **Live Snowflake & Hysteresis Simulator**, **Top 10 Interview Q&A Flashcards**, and **Automotive Jira Ticket Studio**.
 
 Enterprise test automation and signal simulation framework designed specifically for **Automotive Instrument Cluster HMI and In-Vehicle Infotainment (IVI)** verification.
 
