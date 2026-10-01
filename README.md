@@ -1,33 +1,4 @@
-# 🚗 Automotive HMI & IVI Automated Testing & Signal Simulation Framework
 
-[![Live Demo - GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-brightgreen?logo=github&style=for-the-badge)](https://sudeepthirao694-hub.github.io/automotive-hmi-test-framework/)
-
-[![HMI CI Pipeline](https://github.com/sudeepthirao694-hub/automotive-hmi-test-framework/actions/workflows/hmi-ci-pipeline.yml/badge.svg)](https://github.com/sudeepthirao694-hub/automotive-hmi-test-framework/actions/workflows/hmi-ci-pipeline.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Domain: Automotive](https://img.shields.io/badge/Domain-Automotive_HMI_%2F_IVI-blue.svg)](#)
-[![Standards: ISO 2575 | ASPICE | UNECE R39](https://img.shields.io/badge/Standards-ISO_2575_%7C_ASPICE-green.svg)](#)
-
-> 🌐 **Interactive Web Portal:** [https://sudeepthirao694-hub.github.io/automotive-hmi-test-framework/](https://sudeepthirao694-hub.github.io/automotive-hmi-test-framework/)  
-> Includes the **Visual Defect Spotter**, **Live Snowflake & Hysteresis Simulator**, **Top 10 Interview Q&A Flashcards**, and **Automotive Jira Ticket Studio**.
-
-Enterprise test automation and signal simulation framework designed specifically for **Automotive Instrument Cluster HMI and In-Vehicle Infotainment (IVI)** verification.
-
-Built to mirror Tier-1 / OEM automotive test environments (Vector CANoe, dSPACE HIL, Qt/QML, Android Automotive OS), providing **automated CAN signal generation**, **Robot Framework test suites**, **boundary value analysis with hysteresis**, **DLT log parsing**, and **automated Jira defect reporting**.
-
----
-
-## 🎯 Direct Alignment with Job Description
-
-| Job Description Requirement | Framework Implementation & Evidence |
-| :--- | :--- |
-| **Manual & Automated HMI Testing** | Functional validation of Speedometer, TPMS, Outside Temp, and ISO 2575 Telltales on Digital Cockpit. |
-| **Customer Automation Frameworks** | Executable **Robot Framework** suites (`tests/robot/*.robot`) and **Python** test engines. |
-| **Car HMI Signal Simulation** | `simulator/can_signal_generator.py` simulating cyclic CAN frames (`0x120`, `0x140`, `0x160`, `0x180`). |
-| **Failure Analysis & Traces** | `tools/log_trace_analyzer.py` parsing CAN traces and DLT (Diagnostic Log and Trace) logs. |
-| **Detailed Defect Reporting** | `tools/jira_defect_generator.py` auto-generating Jira defect tickets with reproduction steps, CAN traces, and impact analysis. |
-| **Test Records & Reporting** | `tools/test_report_generator.py` creating ISO 29119 HTML reports with **Go / No-Go** release sign-offs. |
-
----
 
 ## 🏗️ Architecture Overview
 
@@ -163,15 +134,3 @@ When a failure is detected, the framework automatically produces:
    - Expected vs Actual results
    - Synchronized CAN trace snippet and DLT logs
    - Safety & ASIL impact analysis
-
----
-
-## 🎙️ Interview Talking Points
-
-When presenting this project to the client, highlight:
-> *"I designed an end-to-end Automotive HMI Test Automation Framework. It features a CAN Signal Generator that simulates cyclic bus messages and fault injections like bus timeouts and out-of-bounds values. I automated critical cluster scenarios in Robot Framework and Python, covering BVA with hysteresis for freeze warnings, TPMS unit uniformity, and analog-needle synchronization. The framework parses CAN traces and DLT logs, automatically generates production-ready Jira tickets upon test failure, and delivers an ISO 29119 HTML report with release recommendations."*
-
----
-
-## 📄 License
-MIT License. Created by Sudeepthi Rao for Automotive HMI Software Quality Assurance.
